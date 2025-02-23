@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #00E5CC;
+    --background: #0A0B1A;
+  }
+  
+  body {
+    @apply bg-[var(--background)] text-white font-sans;
+  }
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#00E5CC] to-[#00A3FF] bg-clip-text text-transparent;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-[var(--primary)] text-black font-semibold rounded-full 
+         hover:opacity-90 transition-all duration-300;
+}
+
+.section {
+  @apply max-w-7xl mx-auto px-4 py-20;
+}
